@@ -1,0 +1,81 @@
+html,
+body {
+  font-size: 10px;
+  font-family: "Cutive Mono", 'Courier New', Courier, monospace;
+}
+
+/* more convinient for development */
+* {
+  box-sizing: border-box;
+}
+
+/* commont reset ul, li */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+.wrap {
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.page {
+  font-size: 1.6rem;
+  padding-top: 2rem;
+}
+
+.user-section {
+  flex: 0 0 20rem;
+}
+
+.user-photo {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.info {
+  margin-top: 0;
+}
+
+.info-title {
+  font-weight: 700;
+  color: gray;
+  text-transform: uppercase;
+}
+
+.info-description:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.footer {
+  margin-top: 4rem;
+  padding: 0.5rem 0;
+
+  color: #ffffff;
+
+  background-color: rgb(56, 56, 56);
+}
+
+@media only screen and (min-width: 1024px) {
+  .wrap {
+    width: 102.4rem;
+    padding: 0;
+  }
+
+  .page {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 2rem;
+  }
+
+  .user-section {
+    padding-right: 2rem;
+  }
+}
