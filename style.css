@@ -1,0 +1,74 @@
+html,
+body {
+  font-size: 10px;
+  font-family: "Cutive Mono", 'Courier New', Courier, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+.page {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-top: 2rem;
+  font-size: 1.6rem;
+}
+
+.user-section {
+  flex: 0 0 20rem;
+  padding-right: 2rem;
+}
+
+.user-photo {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.info-section {
+}
+
+.wrap {
+  margin: 0 auto;
+}
+
+.info {
+  margin-top: 0;
+}
+
+dt {
+  font-weight: 700;
+  color: gray;
+  text-transform: uppercase;
+}
+
+dd:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.footer {
+  margin-top: 4rem;
+  padding: 0.5rem 0;
+
+  color: #ffffff;
+
+  background-color: rgb(56, 56, 56);
+}
+
+@media only screen and (min-width: 1024px) {
+  .wrap {
+    width: 1024px;
+  }
+}
