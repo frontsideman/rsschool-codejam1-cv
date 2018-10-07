@@ -4,10 +4,12 @@ body {
   font-family: "Cutive Mono", 'Courier New', Courier, monospace;
 }
 
+/* more convinient for development */
 * {
   box-sizing: border-box;
 }
 
+/* commont reset ul, li */
 ul {
   margin: 0;
   padding: 0;
@@ -18,43 +20,37 @@ li {
   list-style-type: none;
 }
 
+.wrap {
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
 .page {
-  display: flex;
-  flex-wrap: nowrap;
-  padding-top: 2rem;
   font-size: 1.6rem;
+  padding-top: 2rem;
 }
 
 .user-section {
   flex: 0 0 20rem;
-  padding-right: 2rem;
 }
 
 .user-photo {
   max-width: 100%;
-  width: 100%;
   height: auto;
   vertical-align: top;
-}
-
-.info-section {
-}
-
-.wrap {
-  margin: 0 auto;
 }
 
 .info {
   margin-top: 0;
 }
 
-dt {
+.info-title {
   font-weight: 700;
   color: gray;
   text-transform: uppercase;
 }
 
-dd:not(:last-child) {
+.info-description:not(:last-child) {
   margin-bottom: 2rem;
 }
 
@@ -69,6 +65,17 @@ dd:not(:last-child) {
 
 @media only screen and (min-width: 1024px) {
   .wrap {
-    width: 1024px;
+    width: 102.4rem;
+    padding: 0;
+  }
+
+  .page {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 2rem;
+  }
+
+  .user-section {
+    padding-right: 2rem;
   }
 }
